@@ -1,0 +1,14 @@
+# Environments
+env/
+.env
+
+# Cache
+__pycache__/
+*.pyc
+
+# Evaluation Cache
+.deepeval/
+
+# Databases (Optional: Un-comment if you don't want to upload your heavy SQLite files)
+# *.db
+# *.sqlite3
