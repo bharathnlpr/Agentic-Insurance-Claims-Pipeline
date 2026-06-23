@@ -39,19 +39,23 @@ An autonomous, multi-agent AI architecture designed to process, evaluate, and re
 
 2. **Create and activate a virtual environment**
    * For Windows:
+     ```bash
       python -m venv env
       .\env\Scripts\activate
 
    * For Mac/Linux:
+     ```bash
       python3 -m venv env
       source env/bin/activate
    
 3. **Install dependencies:**
-   * pip install langgraph deepeval streamlit google-genai python-dotenv pandas chromadb
+   ```bash
+   pip install langgraph deepeval streamlit google-genai python-dotenv pandas chromadb
 
 4. **Set up Environment Variables:**
    * Create a .env file in the root directory and add your Google Gemini API key:
      GOOGLE_API_KEY="your_api_key_here"
 
 5. **Launch the Application:**
-   * streamlit run app.py
+   ```bash
+   streamlit run app.py
