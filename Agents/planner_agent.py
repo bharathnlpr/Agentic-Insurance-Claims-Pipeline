@@ -54,10 +54,6 @@ def planner_agent(state: ClaimsState) -> Dict:
         # If verified successfully, seed the state with the baseline PENDING data block
         policy_analysis = validation_result
 
-    # 🛑 If already flagged as unregistered in a previous pass, don't allow processing
-    if policy_analysis.get("policy_name") == "UNREGISTERED_CLIENT":
-        return {"policy_analysis": policy_analysis}
-
     # ==============================================================================
     # 🔀 PHASE 1 & 2: RE-ROUTING (Bypass LLM compilation if steps are running)
     # ==============================================================================
